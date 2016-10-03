@@ -1,0 +1,5 @@
+$(function(){
+  $("#submit-message").hide();
+
+
+});

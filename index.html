@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>Contact Form</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link href="https://fonts.googleapis.com/css?family=David+Libre|Fjalla+One|Homemade+Apple" rel="stylesheet">
+  </head>
+  <body>
+    <div class="title-container">
+      <h1>Contact Form</h1>
+    </div>
+    <div id="form" class="form-container">
+      <div class="form-item-container">
+        <p id="name">
+          Name
+        </p>
+        <form action="/" method="get">
+          <fieldset class="group">
+            <input class="form-input" type="text" required placeholder="your first and last name">
+
+          </fieldset>
+        </form>
+      </div>
+      <div class="form-item-container">
+        <p id="email">
+          Email
+        </p>
+        <form action="/" method="get">
+          <fieldset class="group">
+            <input class="form-input" type="text" required placeholder="your email address">
+
+          </fieldset>
+        </form>
+      </div>
+      <div class="form-item-container">
+        <p>
+          Message
+        </p>
+        <form action="/" method="get">
+          <fieldset id="message" class="group">
+            <input class="form-input" type="text" required placeholder="tell me your deepest, darkest secrets plz">
+
+          </fieldset>
+        </form>
+      </div>
+    </div>
+    <div id="error-message" class="form-container">
+      <p id="error-text">
+        Please fill in all fields.
+      </p>
+    </div>
+    <div id="submit-message" class="form-container">
+      <h1 id="submit-text" >Your message has been submitted. We <br> won't be getting back to you. Thanks!</h1>
+    </div>
+    <div class="submit-button">
+      <h6>Submit</h6>
+    </div>
+  </body>
+  <script src="js/script.js"></script>
+</html>
