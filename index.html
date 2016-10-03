@@ -15,10 +15,9 @@
         <p id="name">
           Name
         </p>
-        <form action="/" method="get">
+        <form name="form-name"action="/" method="get">
           <fieldset class="group">
-            <input class="form-input" type="text" required placeholder="your first and last name">
-
+            <input name="name" class="form-input" type="text" required placeholder="your first and last name">
           </fieldset>
         </form>
       </div>
@@ -26,10 +25,9 @@
         <p id="email">
           Email
         </p>
-        <form action="/" method="get">
+        <form name="form-email" action="/" method="get">
           <fieldset class="group">
-            <input class="form-input" type="text" required placeholder="your email address">
-
+            <input name="email" class="form-input" type="text" required placeholder="your email address">
           </fieldset>
         </form>
       </div>
@@ -37,17 +35,25 @@
         <p>
           Message
         </p>
-        <form action="/" method="get">
+        <form name="form-message" action="/" method="get">
           <fieldset id="message" class="group">
-            <input class="form-input" type="text" required placeholder="tell me your deepest, darkest secrets plz">
-
+            <input name="fmessage" class="form-input" type="text" required placeholder="tell me your deepest, darkest secrets">
           </fieldset>
         </form>
       </div>
     </div>
     <div id="error-message" class="form-container">
-      <p id="error-text">
-        Please fill in all fields.
+      <p id="error-text-1" class="etext">
+        Name has been left blank.
+      </p>
+      <p id="error-text-2" class="etext">
+        Email has been left blank.
+      </p>
+      <p id="error-text-4" class="etext">
+        Please enter a valid email address.
+      </p>
+      <p id="error-text-3" class="etext">
+        Message has been left blank.
       </p>
     </div>
     <div id="submit-message" class="form-container">
@@ -57,5 +63,6 @@
       <h6>Submit</h6>
     </div>
   </body>
-  <script src="js/script.js"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+  <script src="JS/script.js"></script>
 </html>
